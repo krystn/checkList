@@ -1,0 +1,176 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* my CSS below */
+
+body {
+    margin: 10% 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #3a86ff;
+}
+
+.container {
+    align-items: left;
+    width: 250px;
+    border: 1px solid #3a86ff;
+    padding: 20px;
+    box-shadow: 10px 10px 0px 0px #3a86ff;
+    font-family: 'Quicksand', sans-serif;
+}
+
+
+h1 {
+    font-size: 2.5rem;
+    padding-bottom: 20px;
+    font-weight: 600;
+}
+
+h2 {
+    font-size: 1.5rem;
+    padding-bottom: 5px;
+    font-weight: 500;
+}
+
+#todoForm {
+    display: flex;
+}
+
+input {
+    width: 100%;
+    margin-right: 10px;
+}
+
+input[type="text"] {
+    font-family: 'Quicksand', sans-serif;
+    border-radius: 0;
+    border: 1px solid #3a86ff;
+}
+
+.button {
+  align-items: center;
+  background-color: #3a86ff;
+  border: 2px solid #3a86ff;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  fill: #000;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1rem;
+  height: 25px;
+  justify-content: center;
+  line-height: 100%;
+  width: 60px;
+  outline: 0;
+  padding: 0 17px;
+  text-align: center;
+  text-decoration: none;
+  transition: all .3s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button:hover {
+  background-color: white;
+  border-color: #3a86ff;
+  color: #3a86ff;
+}
+
+.button:active {
+  background-color: #3a86ff;
+  border-color: #3a86ff;
+}
+
+ul{
+    margin-top: 20px;
+}
+
+li {
+    display: flex;
+}
+
+#todoList {
+    padding-top: 20px;
+    margin-bottom: 20px;
+}
+
+#completed {
+    padding-top: 20px;
+}
+
+.listBorder {
+    border-top: 1px solid #ccc;
+}
+
+.checkbox {
+    display: inline;
+    width: auto;
+    margin-right: 10px;
+    margin-left: 0;
+}
+
+.item {
+    display: inline;
+    flex: 3;
+    color: #3a86ff;
+}
+
+.remove {
+    float: right;
+    color: #ff006e;
+    cursor: pointer;
+}
+
+.completedItem {
+    text-decoration: line-through;
+    color: #bbb;
+}
