@@ -51,8 +51,6 @@ form.addEventListener('submit', function (e) {
     // returns input to default
     input.value = '';
     
-    // is it better to have event listener inside an event 
-    // listener or a function?
     // event listener for toggling the checkbox
     checkbox.addEventListener('change', function() {
         if(this.checked) {
@@ -77,17 +75,7 @@ form.addEventListener('submit', function (e) {
             todoCount.innerText = countLis(list);
         }
     }
-
-    // count number of completed list items
-    const completedLis = document.getElementById('completed').getElementsByTagName('li');
-
-    if(countLis(completed) > 0){
-        completed.classList.add('listBorder');
-    } else {
-        return;
-    }
 });
-
 
 
 
